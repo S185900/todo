@@ -1,0 +1,271 @@
+/* <header class="header">
+<div class="header__inner">
+  <a class="header__logo" href="/">
+    Contact Form
+  </a>
+</div>
+</header> */
+
+.header {
+    background: #000;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+}
+
+.header__logo {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+/* <div class="todo__alert">
+    <div class="todo__alert--success">
+        Todoを作成しました
+    </div>
+    <div class="todo__alert--danger">
+        Todoを入力してください
+    </div>
+</div> */
+
+.todo__alert .todo__alert--success{
+    background-color: #d1e7dd;
+    border: 1px solid #badbcc;
+    padding: 10px 15px;
+
+}
+
+.todo__alert--success {
+    color: #0f5132;
+}
+
+.todo__alert .todo__alert--danger {
+    background-color: #f8d7da;
+    border: 1px solid #f5c2c7;
+    padding: 10px 15px;
+}
+
+.todo__alert--danger {
+    color: #842029;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+/* <div class="todo__content">
+   <form class="create-form">
+
+        <!-- Todo入力フォーム -->
+        <div class="create-form__item">
+            <input class="create-form__item-input" type="text" name="content">
+        </div>
+
+        <!-- 作成ボタン -->
+        <div class="create-form__button">
+            <button class="create-form__button-submit" type="submit">
+                作成
+            </button>
+        </div>
+
+   </form>
+</div> */
+
+
+.todo__content {
+    margin: 0 auto;
+    padding: 60px 15px;
+    max-width: 1230px;
+}
+
+.create-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.create-form__item {
+    width: 70%;
+}
+
+.create-form__button {
+    width: 17%;
+}
+
+.create-form__item-input {
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.create-form__button-submit {
+    /* padding: 10px; */
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+.todo-table {
+    margin: 30px auto;
+    width: 70%;
+    text-align: left;
+}
+
+.todo-table__inner {
+    width: 100%;
+    /* text-align: left; */
+}
+
+.todo-table__row {
+    /* width: 100%; */
+    border-bottom: 1px solid #ddd;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+}
+
+/* .todo-table__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+} */
+
+.todo-table__item:first-of-type {
+    padding: 12px 0 12px 12px;
+    width: 90%;
+}
+
+.todo-table__item:last-of-type {
+    padding: 12px;
+    width: 10%;
+}
+
+.update-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 0 auto; */
+    /* width: 70%; */
+}
+
+.update-form__item {
+    width: 80%;
+    line-height: 50%;
+}
+
+.todo-table__header {
+    padding: 0 0 12px 12px;
+    font-weight: bold;
+    /* padding-left: 10px; */
+    width: 20%;
+}
+
+.update-form__button-submit {
+    width: 100%;
+    padding: 5px;
+    /* height: 30px; */
+    color: #fff;
+    background-color: #0000ff;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.update-form__button {
+    width: 50px;
+}
+
+.delete-form__button-submit {
+    width: 100%;
+    padding: 5px;
+    /* height: 30px; */
+    color: #fff;
+    background-color: #ff0000;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.delete-form__button {
+    width: 50px; 
+}
+
+.update-form__item-input {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+
+/* 
+  <div class="todo-table">
+    <table class="todo-table__inner">100 左よせ
+      <tr class="todo-table__row">70　罫線
+
+        <th class="todo-table__header">下に少し余白
+        Todo
+        </th>
+
+      </tr>
+
+      <tr class="todo-table__row">罫線
+
+        <td class="todo-table__item">
+          <form class="update-form">
+            <div class="update-form__item">
+              <input class="update-form__item-input" type="text" name="content" value="test">
+            </div>
+            <div class="update-form__button">
+              <button class="update-form__button-submit" type="submit">更新</button>
+            </div>
+          </form>
+        </td>
+        <td class="todo-table__item">
+          <form class="delete-form">
+            <div class="delete-form__button">
+              <button class="delete-form__button-submit" type="submit">削除</button>
+            </div>
+          </form>
+        </td>
+      </tr>
+
+
+      <tr class="todo-table__row">
+        <td class="todo-table__item">
+          <form class="update-form">
+            <div class="update-form__item">
+              <input class="update-form__item-input" type="text" name="content" value="test2">
+            </div>
+            <div class="update-form__button">
+              <button class="update-form__button-submit" type="submit">更新</button>
+            </div>
+          </form>
+        </td>
+        <td class="todo-table__item">
+          <form class="delete-form">
+            <div class="delete-form__button">
+              <button class="delete-form__button-submit" type="submit">削除</button>
+            </div>
+          </form>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div> */
