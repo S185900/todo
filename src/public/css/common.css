@@ -1,16 +1,63 @@
 .header {
     background: #000;
+    max-width: 100%;
 }
 
 .header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
-    padding: 20px 15px;
-    max-width: 1230px;
+    padding: 18px 15px;
 }
 
-.header__logo {
+.header__logo__inner {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
+    padding-left: 50px;
 }
+
+.header__nav__inner {
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 12px;
+    padding-right: 70px;
+    padding-left: 50px;
+}
+
+@media (max-width: 400px) {
+
+    .header__inner {
+        display: flex;
+        /* Flexboxを有効化 */
+        flex-direction: column;
+        /* 縦並びに変更 */
+        gap: 10px;
+        /* 縦並びでも要素間に適切なスペースを確保 */
+        align-items: stretch;
+        /* 必要に応じて全要素を幅いっぱいに調整 */
+    }
+
+    .header__inner>* {
+        width: 100%;
+        /* 子要素を親要素の幅に合わせる */
+    } 
+}
+
+/* <header class="header">
+<div class="header__inner">
+  <div class="header__logo">
+    <a class="header__logo__inner" href="/">
+      Todo
+    </a>
+  </div>
+  <div class="header__nav">
+    <a class="header__nav__inner" href="/category">
+      カテゴリ一覧
+    </a>
+  </div>
+</div>
+</header> */

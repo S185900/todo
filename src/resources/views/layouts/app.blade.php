@@ -14,9 +14,16 @@
 <body>
   <header class="header">
     <div class="header__inner">
-      <a class="header__logo" href="/">
-        Todo
-      </a>
+      <div class="header__logo">
+        <a class="header__logo__inner" href="/">
+          Todo
+        </a>
+      </div>
+      <div class="header__nav">
+        <a class="header__nav__inner" href="/category">
+          カテゴリ一覧
+        </a>
+      </div>
     </div>
   </header>
 
